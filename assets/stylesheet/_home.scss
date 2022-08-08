@@ -1,0 +1,119 @@
+/* Header */
+.navbar{
+    background: linear-gradient(to right, rgba(orange, 0.8),white , rgba(green, 0.8)) ;
+    padding: 1rem 0;
+    a{
+        color: blue;
+    }
+}
+.brand{
+    font-size: 3rem;
+}
+.nav{
+    a{
+        margin-right: 1rem;
+        &:hover{
+            color: $primary;
+        }
+    }
+    .drop-down-menu{
+        background-color: white;
+        display: none;
+        position: absolute;
+        margin-top: 1rem;
+        padding: 2rem;
+        li{
+            margin-bottom: 1rem;
+        }
+        a{
+            color: $text-dark;
+        }
+    }
+}
+.drop-down{
+    position: relative;
+    &:hover{
+        .drop-down-menu{
+            display: block;
+        } 
+    }
+}
+
+/*hero*/
+.hero{
+    height: 70vh;
+    background: url(../img/indian-flag.jpeg) center no-repeat;
+    background-size: cover;
+    h1{
+        color: #2961f0;
+        padding-top: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    section{
+        color: $text-light;
+        padding: 2rem 0;
+        a{
+            color: $text-dark;
+        }
+        background-color: $footer-bg;
+        h3{
+            padding: 1.5rem 0 1rem 0;
+        }
+        .address1{
+            padding-bottom: 2rem;
+        }
+        li{
+            padding-bottom: 0.8rem;
+        }
+    }
+}
+.footer-social-media{
+    padding: 2rem 0;
+    text-align: center;
+    background-color: $text-light;
+    color: white;
+    p{
+        margin-bottom: 0.5rem;
+    }
+    nav{
+        justify-content: center;
+        margin-top: 2rem;
+        div{
+            height: 3rem;
+            width: 3rem;
+            background-color: $primary;
+            margin: 0 0.5rem;
+            border-radius: 50%;
+        }
+        i{
+            font-size: 1.2rem;
+            color: white;
+        }
+    }
+}
