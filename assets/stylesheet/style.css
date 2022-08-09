@@ -98,6 +98,18 @@ html {
           align-items: center;
 }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -259,8 +271,14 @@ figure img {
   color: blue;
 }
 
+.navbar .bars, .navbar #toggle {
+  display: none;
+}
+
 .brand {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0505c9 !important;
 }
 
 .nav a {
@@ -359,5 +377,221 @@ footer section li {
 .footer-social-media nav i {
   font-size: 1.2rem;
   color: white;
+}
+
+/* secondary-page-heading */
+.secondary-page-heading {
+  background: url(../img/page-heading.jpeg) center no-repeat;
+  background-size: cover;
+}
+
+.secondary-page-heading h1 {
+  text-align: center;
+  padding: 7rem 0;
+  color: #ef9d06;
+}
+
+/* about-page */
+.awesome-team {
+  padding-bottom: 3rem;
+}
+
+.awesome-team h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.awesome-team .figures {
+  border: 5px solid #ef9d06;
+  font-size: 0;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.awesome-team .figures::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.awesome-team .figures figure {
+  height: 100%;
+  width: 100%;
+}
+
+.awesome-team button {
+  margin: 2rem 3rem;
+}
+
+.circle-bar {
+  position: relative;
+  width: 48%;
+  margin-bottom: 2rem;
+}
+
+.circle-div {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  left: 1rem;
+}
+
+.circle-div .circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: lightblue;
+  margin-left: 1rem;
+}
+
+.circle-div .circle a {
+  color: lightblue;
+  font-size: 0.8rem;
+}
+
+.choose-solution-expertise {
+  padding: 3rem;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+.choose-solution-expertise h3 {
+  padding: 1rem 0 1.5rem 0;
+}
+
+.solution li {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 255, 0.5);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.solution li i {
+  margin-right: 0.5rem;
+}
+
+.solution li a {
+  color: white;
+}
+
+.expertise label, .expertise span {
+  color: #333333;
+}
+
+.expertise progress {
+  width: 100%;
+  height: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.team-member {
+  padding-bottom: 2rem;
+}
+
+.team-member h3 {
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.team-member .team-member-box {
+  text-align: center;
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.team-member .team-member-box figcaption {
+  margin: 0.8rem;
+  font-size: 1.8rem;
+  color: blue;
+}
+
+.team-member .team-member-box span {
+  display: block;
+  font-size: 1rem;
+  color: #ef9d06;
+}
+
+/* Med Screen */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+  .med-flex-100 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .med-flex-48 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+  .nav {
+    display: none;
+  }
+  .navbar #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+  .navbar .bars {
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+    right: 32px;
+    top: 0.4rem;
+    color: white;
+    font-size: 20px;
+  }
+  .navbar .nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 4;
+    padding: 10rem;
+    text-align: center;
+  }
+  .navbar .nav li {
+    margin-bottom: 3.5rem;
+  }
+  .navbar .nav a {
+    font-size: 2.2rem;
+  }
+  .navbar .brand {
+    position: relative;
+    top: 0.4rem;
+    z-index: 99;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* sm Screen */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 520px;
+    padding: 0 10px;
+  }
+  .sm-flex-100 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  /* about */
+  .choose-solution-expertise .solution {
+    margin: 3rem 0;
+  }
+  footer {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

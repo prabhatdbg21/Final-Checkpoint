@@ -5,9 +5,14 @@
     a{
         color: blue;
     }
+    .bars, #toggle{
+        display: none;
+    }
 }
 .brand{
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(5, 5, 201) !important;
 }
 .nav{
     a{
