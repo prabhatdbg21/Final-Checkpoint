@@ -1,0 +1,44 @@
+/* Pricing */
+.pricing-chart{
+    margin: 1rem 0 6rem 0;
+    h2{
+        padding: 1rem 0;
+    }
+    p{
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+}
+.pricing-table{
+    caption{
+        font-size: 2rem;
+        padding: 2rem;
+        color: blue;
+    }
+    border: 4px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    th{
+        padding: 2rem 3rem;
+        border: 2px solid black;
+    }
+    thead{
+        background-color: lightgray;
+        color: white;
+    }
+    tbody{
+        tr{
+            &:hover{
+                background-color: $saffron;
+            }
+        }
+        th{
+            background-color: $text-light;
+            color: white;
+        }
+        td{
+            text-align: center;
+            border: 2px dashed black;
+        }
+    }
+}

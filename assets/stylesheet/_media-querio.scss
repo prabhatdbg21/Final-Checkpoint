@@ -57,6 +57,12 @@
     .container{
         max-width: 720px;
     }
+    /* pricing-768 */
+    .pricing-table{
+        th{
+            padding: 1rem 2rem;
+        }
+    }
 }
 
 /* sm Screen */
@@ -73,6 +79,12 @@
     .choose-solution-expertise{
         .solution{
             margin: 3rem 0;
+        }
+    }
+    /* pricing-768 */
+    .pricing-table{
+        th{
+            padding: 1rem;
         }
     }
     footer{
