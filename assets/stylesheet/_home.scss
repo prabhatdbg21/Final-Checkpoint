@@ -55,6 +55,27 @@
     }
 }
 
+/* Home-Services */
+.home-services{
+    margin: 4rem auto 2rem auto;
+}
+
+/* Home Map */
+.home-map{
+    padding: 2rem 0;
+    background-color: rgba(blue, 0.2);
+    margin: auto;
+    h4{
+        color: $text-dark;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    iframe{
+        margin: auto;
+    }
+}
+
 
 
 

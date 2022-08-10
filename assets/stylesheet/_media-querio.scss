@@ -1,7 +1,7 @@
 /* Med Screen */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 810px){
     .container{
-        max-width: 940px;
+        max-width: 760px;
     }
     .med-flex-100{
         flex: 0 1 100%;
@@ -48,6 +48,17 @@
             z-index: 99;
         }
     }
+    /* Form */
+    .contact-form{
+        max-width: 600px;
+    }
+
+    /* Home */
+    .home-map{
+        iframe{
+            max-width: 500px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -62,6 +73,10 @@
         th{
             padding: 1rem 2rem;
         }
+    }
+    /* Form */
+    .contact-form{
+        max-width: 500px;
     }
 }
 
@@ -87,8 +102,33 @@
             padding: 1rem;
         }
     }
+    /* Form */
+    .contact-form{
+        max-width: 430px;
+    }
     footer{
         font-size: 16px;
+    }
+
+    /* Home */
+    .home-map{
+        iframe{
+            max-width: 460px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    /* Form */
+    .contact-form{
+        max-width: 350px;
+    }
+    /* Home */
+    .home-map{
+        iframe{
+            max-width: 370px;
+        }
     }
 }
 

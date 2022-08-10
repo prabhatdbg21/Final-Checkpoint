@@ -1,0 +1,30 @@
+/* Services */
+.services-facilites{
+    margin-top: -4rem;
+    padding: 2rem 0;
+}
+.services-facilites-box{
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-color: rgb(201, 222, 229);
+    figure{
+        height: 210px;
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+    h4{
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: $text-dark;
+    }
+    p{
+        padding: 0 1rem 1.5rem 1rem;
+    }
+    &:hover{
+        transform: scale(1.2);
+        background-color: rgb(138, 211, 138);
+        color: white;
+    }
+}

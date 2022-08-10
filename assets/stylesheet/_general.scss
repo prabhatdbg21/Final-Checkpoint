@@ -87,9 +87,9 @@ html{
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
     border: 0;
-    background-color: $primary;
+    background-color: rgb(129, 197, 129);
     a{
-        color: white !important;
+        color: blue;
     }
 }
 .btn-secondary{
@@ -129,7 +129,7 @@ figure {
 
 /* Box Shadow */
 .box-shadow{
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
     background-color: white;
     border-radius: 0.4rem;
 }

@@ -1,0 +1,33 @@
+.contact-form{
+    max-width: 700px;
+    padding: 2rem;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 6rem;
+    h3{
+        color: blue;
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    legend{
+        color: green;
+        font-size: 1.5rem;
+    }
+    input, textarea{
+        margin: 1rem 0;
+        padding: 0 1rem;
+        width: 100%;
+        height: 2.5rem;
+    }
+    textarea{
+        height: auto;
+        padding-top: 1rem;
+        resize: none;
+    }
+    button{
+        display: block;
+        margin: auto;
+    }
+}

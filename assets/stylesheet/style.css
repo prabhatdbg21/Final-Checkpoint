@@ -204,11 +204,11 @@ html {
   padding: 0.8rem 1.5rem;
   border-radius: 3rem;
   border: 0;
-  background-color: #dc3b45;
+  background-color: #81c581;
 }
 
 .btn a {
-  color: white !important;
+  color: blue;
 }
 
 .btn-secondary {
@@ -254,8 +254,8 @@ figure img {
 
 /* Box Shadow */
 .box-shadow {
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
   background-color: white;
   border-radius: 0.4rem;
 }
@@ -323,6 +323,29 @@ figure img {
 .hero h1 {
   color: #2961f0;
   padding-top: 2rem;
+}
+
+/* Home-Services */
+.home-services {
+  margin: 4rem auto 2rem auto;
+}
+
+/* Home Map */
+.home-map {
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 255, 0.2);
+  margin: auto;
+}
+
+.home-map h4 {
+  color: #333333;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.home-map iframe {
+  margin: auto;
 }
 
 /* Footer */
@@ -513,15 +536,15 @@ footer section li {
 }
 
 /* Pricing */
-.pricing-chart {
+.chart {
   margin: 1rem 0 6rem 0;
 }
 
-.pricing-chart h2 {
+.chart h2 {
   padding: 1rem 0;
 }
 
-.pricing-chart p {
+.chart p {
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
@@ -562,10 +585,133 @@ footer section li {
   border: 2px dashed black;
 }
 
+.contact-form {
+  max-width: 700px;
+  padding: 2rem;
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.contact-form h3 {
+  color: blue;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact-form legend {
+  color: green;
+  font-size: 1.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.contact-form textarea {
+  height: auto;
+  padding-top: 1rem;
+  resize: none;
+}
+
+.contact-form button {
+  display: block;
+  margin: auto;
+}
+
+/* Portfolio */
+/*
+.portfolio-bar{
+    padding-bottom: 2rem;
+    h5{
+        padding:1.5rem 2rem;
+        border: 2px solid orange;
+        margin-right: 1.5rem;
+        background-color: rgb(119, 200, 227);
+        color: black;
+    }
+}
+*/
+.portfolio-figures {
+  margin-top: -2rem;
+}
+
+.portfolio-figures-box {
+  position: relative;
+  height: 14rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-figures-box figure {
+  height: 100%;
+}
+
+.portfolio-figures-box div {
+  display: none;
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(239, 157, 6, 0.6);
+  height: 100%;
+  padding-top: 6rem;
+}
+
+.portfolio-figures-box:hover div {
+  display: block;
+}
+
+/* Services */
+.services-facilites {
+  margin-top: -4rem;
+  padding: 2rem 0;
+}
+
+.services-facilites-box {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  background-color: #c9dee5;
+}
+
+.services-facilites-box figure {
+  height: 210px;
+}
+
+.services-facilites-box figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.services-facilites-box h4 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #333333;
+}
+
+.services-facilites-box p {
+  padding: 0 1rem 1.5rem 1rem;
+}
+
+.services-facilites-box:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: #8ad38a;
+  color: white;
+}
+
 /* Med Screen */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 810px) {
   .container {
-    max-width: 940px;
+    max-width: 760px;
   }
   .med-flex-100 {
     -webkit-box-flex: 0;
@@ -614,6 +760,14 @@ footer section li {
     top: 0.4rem;
     z-index: 99;
   }
+  /* Form */
+  .contact-form {
+    max-width: 600px;
+  }
+  /* Home */
+  .home-map iframe {
+    max-width: 500px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -626,6 +780,10 @@ footer section li {
   /* pricing-768 */
   .pricing-table th {
     padding: 1rem 2rem;
+  }
+  /* Form */
+  .contact-form {
+    max-width: 500px;
   }
 }
 
@@ -648,8 +806,27 @@ footer section li {
   .pricing-table th {
     padding: 1rem;
   }
+  /* Form */
+  .contact-form {
+    max-width: 430px;
+  }
   footer {
     font-size: 16px;
+  }
+  /* Home */
+  .home-map iframe {
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* Form */
+  .contact-form {
+    max-width: 350px;
+  }
+  /* Home */
+  .home-map iframe {
+    max-width: 370px;
   }
 }
 /*# sourceMappingURL=style.css.map */
