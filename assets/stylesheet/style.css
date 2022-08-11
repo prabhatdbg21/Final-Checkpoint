@@ -704,6 +704,8 @@ footer section li {
 .services-facilites-box:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
   background-color: #8ad38a;
   color: white;
 }
@@ -764,6 +766,11 @@ footer section li {
   .contact-form {
     max-width: 600px;
   }
+  /* Services*/
+  .services-facilites-box:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
   /* Home */
   .home-map iframe {
     max-width: 500px;
@@ -792,6 +799,11 @@ footer section li {
   .container {
     max-width: 520px;
     padding: 0 10px;
+  }
+  .sm-flex-90 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 90%;
+            flex: 0 1 90%;
   }
   .sm-flex-100 {
     -webkit-box-flex: 0;
@@ -826,7 +838,7 @@ footer section li {
   }
   /* Home */
   .home-map iframe {
-    max-width: 370px;
+    max-width: 37px;
   }
 }
 /*# sourceMappingURL=style.css.map */

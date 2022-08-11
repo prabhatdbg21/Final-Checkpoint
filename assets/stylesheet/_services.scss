@@ -24,6 +24,7 @@
     }
     &:hover{
         transform: scale(1.2);
+        transition-duration: 2s;
         background-color: rgb(138, 211, 138);
         color: white;
     }
