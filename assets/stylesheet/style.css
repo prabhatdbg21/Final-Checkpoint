@@ -325,6 +325,81 @@ figure img {
   padding-top: 2rem;
 }
 
+/* Coin*/
+.coin-box {
+  background-color: rgba(0, 0, 255, 0.2);
+  text-align: center;
+}
+
+.coin-box h3 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.coin-box .coin {
+  width: 210px;
+  margin: auto;
+  position: relative;
+  height: 210px;
+}
+
+.coin-box .coin img {
+  border-radius: 50%;
+}
+
+.coin-box .coin:hover {
+  -webkit-animation-name: coin-rotation;
+          animation-name: coin-rotation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.coin-box .coin .front, .coin-box .coin .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.coin-box .coin .front img, .coin-box .coin .back img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: red;
+}
+
+@-webkit-keyframes coin-rotation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    visibility: hidden;
+  }
+}
+
+@keyframes coin-rotation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    visibility: hidden;
+  }
+}
+
 /* Home-Services */
 .home-services {
   margin: 4rem auto 2rem auto;
