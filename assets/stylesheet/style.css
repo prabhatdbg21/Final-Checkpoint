@@ -275,6 +275,10 @@ figure img {
   display: none;
 }
 
+.navbar .bars {
+  color: #ef9d06 !important;
+}
+
 .brand {
   font-size: 2rem;
   font-weight: 700;
@@ -326,32 +330,49 @@ figure img {
 }
 
 /* Coin*/
-.coin-box {
+.coin-div {
   background-color: rgba(0, 0, 255, 0.2);
+  margin-top: -2rem;
+  padding: 2rem;
+}
+
+.coin-div h3 {
   text-align: center;
-}
-
-.coin-box h3 {
   font-size: 3rem;
-  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
-.coin-box .coin {
-  width: 210px;
-  margin: auto;
-  position: relative;
-  height: 210px;
-}
-
-.coin-box .coin img {
+.coin-div img {
   border-radius: 50%;
 }
 
-.coin-box .coin:hover {
-  -webkit-animation-name: coin-rotation;
-          animation-name: coin-rotation;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+.coin-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.coin-box:hover .coin {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.coin-box .coin {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .coin-box .coin .front, .coin-box .coin .back {
@@ -359,45 +380,12 @@ figure img {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
-.coin-box .coin .front img, .coin-box .coin .back img {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color: red;
-}
-
-@-webkit-keyframes coin-rotation {
-  0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
-  100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    visibility: hidden;
-  }
-}
-
-@keyframes coin-rotation {
-  0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
-  100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    visibility: hidden;
-  }
+.coin-box .coin .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 /* Home-Services */
@@ -417,6 +405,15 @@ figure img {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.home-map .map-box {
+  display: block;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 165, 0, 0.8)), color-stop(white), to(rgba(0, 128, 0, 0.8)));
+  background: linear-gradient(to right, rgba(255, 165, 0, 0.8), white, rgba(0, 128, 0, 0.8));
+  padding: 2rem;
+  margin: 2rem auto;
 }
 
 .home-map iframe {
@@ -848,7 +845,7 @@ footer section li {
   }
   /* Home */
   .home-map iframe {
-    max-width: 500px;
+    width: 600px;
   }
 }
 
@@ -867,12 +864,27 @@ footer section li {
   .contact-form {
     max-width: 500px;
   }
+  /* Home */
+  .home-map iframe {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Form */
+  .contact-form {
+    max-width: 600px;
+  }
+  /* Home */
+  .home-map iframe {
+    width: 450px;
+  }
 }
 
 /* sm Screen */
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 520px;
+    max-width: 550px;
     padding: 0 10px;
   }
   .sm-flex-90 {
@@ -900,20 +912,46 @@ footer section li {
   footer {
     font-size: 16px;
   }
+  /* Services */
+  .services-facilites-box {
+    margin-left: 1.5rem;
+  }
   /* Home */
   .home-map iframe {
-    max-width: 460px;
+    width: 400px;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   /* Form */
   .contact-form {
-    max-width: 350px;
+    max-width: 410px;
   }
   /* Home */
   .home-map iframe {
-    max-width: 37px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* Form */
+  .contact-form {
+    max-width: 370px;
+  }
+  /* Home */
+  .home-map iframe {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* Form */
+  .contact-form {
+    max-width: 320px;
+  }
+  /* Home */
+  .home-map iframe {
+    width: 270px;
   }
 }
 /*# sourceMappingURL=style.css.map */

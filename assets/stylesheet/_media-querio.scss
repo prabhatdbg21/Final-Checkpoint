@@ -59,11 +59,10 @@
             transform: scale(1.1);
         }
     }
-
     /* Home */
     .home-map{
         iframe{
-            max-width: 500px;
+            width: 600px;
         }
     }
 }
@@ -85,12 +84,32 @@
     .contact-form{
         max-width: 500px;
     }
+
+    /* Home */
+    .home-map{
+        iframe{
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    /* Form */
+    .contact-form{
+        max-width: 600px;
+    }
+    /* Home */
+    .home-map{
+        iframe{
+            width: 450px;
+        }
+    }
 }
 
 /* sm Screen */
 @media screen and (max-width: 576px) {
     .container{
-        max-width: 520px;
+        max-width: 550px;
         padding: 0 10px;
     }
     .sm-flex-90{
@@ -119,25 +138,55 @@
     footer{
         font-size: 16px;
     }
+    /* Services */
+    .services-facilites-box{
+        margin-left: 1.5rem;
+    }
 
     /* Home */
     .home-map{
         iframe{
-            max-width: 460px;
+            width: 400px;
         }
     }
 
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 480px){
     /* Form */
     .contact-form{
-        max-width: 350px;
+        max-width: 410px;
     }
     /* Home */
     .home-map{
         iframe{
-            max-width: 37px;
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px){
+    /* Form */
+    .contact-form{
+        max-width: 370px;
+    }
+    /* Home */
+    .home-map{
+        iframe{
+            width: 330px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    /* Form */
+    .contact-form{
+        max-width: 320px;
+    }
+    /* Home */
+    .home-map{
+        iframe{
+            width: 270px;
         }
     }
 }
